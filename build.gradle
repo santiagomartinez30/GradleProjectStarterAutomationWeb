@@ -59,10 +59,10 @@ dependencies {
     compileOnly "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$rootProject.ext.lombokVersion"
 }
-tasks.withType(Test) {
+/*tasks.withType(Test) {
     systemProperties = System.properties as Map<String, ?>
     maxParallelForks = Runtime.runtime.availableProcessors()
-}
+}*/
 test {
     testLogging.showStandardStreams = true
     testLogging.exceptionFormat = 'full'
